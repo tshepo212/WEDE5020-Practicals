@@ -2,8 +2,8 @@
 <public class BatsmanRunsReport { public static void main(String[] args) { // Batsmen names String[] batsmen={"Jacques
     Kallis", "Hashim Amla" , "AB de Villiers" }; // Stadium names String[] stadiums={"Newlands", "Wanderers"
     , "Kingsmead" }; // Runs scored by each batsman at each stadium // Format: runs[batsman][stadium] int[][] runs={
-    {1200, 950, 850}, // Jacques Kallis: Newlands, Wanderers, Kingsmead {1100, 900, 800}, // Hashim Amla {1300, 1050,
-    900} // AB de Villiers }; // Display report header System.out.printf("%-15s | %-15s | %-10s%n", "Stadium"
+    {5000, 3500, 6200}, // Jacques Kallis: Newlands, Wanderers, Kingsmead {3800, 3700, 5000}, // Hashim Amla {4200, 3900,
+    5200} // AB de Villiers }; // Display report header System.out.printf("%-15s | %-15s | %-10s%n", "Stadium"
     , "Batsman" , "Total Runs" ); System.out.println("----------------------------------------------------------"); //
     Display runs for each batsman at each stadium for (int i=0; i < stadiums.length; i++) { for (int j=0; j <
     batsmen.length; j++) { System.out.printf("%-15s | %-15s | %-10d%n", stadiums[i], batsmen[j], runs[j][i]); }
