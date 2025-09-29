@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<public class BatsmanRunsReport { public static void main(String[] args) { // Batsmen names String[] batsmen={"Jacques
+    Kallis", "Hashim Amla" , "AB de Villiers" }; // Stadium names String[] stadiums={"Newlands", "Wanderers"
+    , "Kingsmead" }; // Runs scored by each batsman at each stadium // Format: runs[batsman][stadium] int[][] runs={
+    {1200, 950, 850}, // Jacques Kallis: Newlands, Wanderers, Kingsmead {1100, 900, 800}, // Hashim Amla {1300, 1050,
+    900} // AB de Villiers }; // Display report header System.out.printf("%-15s | %-15s | %-10s%n", "Stadium"
+    , "Batsman" , "Total Runs" ); System.out.println("----------------------------------------------------------"); //
+    Display runs for each batsman at each stadium for (int i=0; i < stadiums.length; i++) { for (int j=0; j <
+    batsmen.length; j++) { System.out.printf("%-15s | %-15s | %-10d%n", stadiums[i], batsmen[j], runs[j][i]); }
+    System.out.println("----------------------------------------------------------"); } // Display total career runs per
+    batsman System.out.println("\nTotal Career Runs for Each Batsman:");
+    System.out.println("----------------------------------------"); for (int i=0; i < batsmen.length; i++) { int
+    total=0; for (int j=0; j < stadiums.length; j++) { total +=runs[i][j]; } System.out.printf("%-15s : %d%n",
+    batsmen[i], total); } } }>
